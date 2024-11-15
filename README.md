@@ -1,8 +1,10 @@
 # VFD Display System Monitor
 ---
 ![VFD Showcase1](front.gif)
+
 I picked up a cheap Vacuum Fluorescent Display (VFD) for a cash register and made a cool PC system monitor. The code is designed to work with any serial VFD display that uses the Epson command set. 
 ![VFD Showcase1](back.jpg)
+
 To communicate with my particular unit, I bypassed the RS232 converter and patched directly to the low-voltage pins using XIAO ESP32.
 
 The Arduino client code is designed to work with any serial VFD display that uses the Epson command set. It uses a buffer to dynamically update the display row-by-row, without clearing the screen, eliminating flickering and provides seamless transitions.
